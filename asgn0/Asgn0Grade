@@ -1,0 +1,131 @@
+Name:            'Avalos, Miguel'
+CruzID:          'miaavalo'
+Commit Graded:   '35bbaed927ca7d1bce8f6bea4cf7a3fe097f98dc'
+Late Days Used:  0
+Score:           91.67/100
+
+
+Functional (31/36)
+
+Design Document (15/15)
+    -Project Description    (3/3)
+    -Program Logic          (3/3)
+    -Data Structures        (3/3)
+    -Functions              (3/3)
+    -Questions              (3/3)
+
+Code Style (5/5)
+
+
+Functional Tests Output:
+
+========> Checking asgn0 now (2021-04-15 16:54:12.207700) ==================================
+------ Checking for files before running commands ------
+Files OK
+----- Running commands:
+cd asgn0; echo '-- Files in asgn0 --' ; ls ; echo '-- Running make --' ; make
+------ Command output ------
+-- Files in asgn0 --
+DESIGN.pdf
+Makefile
+README.md
+shoulders.c
+-- Running make --
+gcc -c -std=c99 -Wall shoulders.c
+gcc -o shoulders shoulders.o
+chmod +x shoulders
+------ End command output ------
+------ Checking for files after running commands ------
+Files OK
+.......................................................
+++++ Your submission has met minimum requirements for assignment asgn0.
+++++ You may submit commit ID 35bbaed927ca7d1bce8f6bea4cf7a3fe097f98dc for asgn0.
+.......................................................
+<======== Done checking asgn0 (2021-04-15 16:54:12.248245)
+
+
+========> Running test script for asgn0 (2021-04-15 16:54:12.248502) <================
+--> Building ...succeeded!
+--------> Running asgn0.test.01 (Write small text files to output) ... SUCCESS!
+<- Run of asgn0.test.01 complete ----------
+
+--------> Running asgn0.test.02 (Write small binary files to output) ... SUCCESS!
+<- Run of asgn0.test.02 complete ----------
+
+--------> Running asgn0.test.03 (Write small mixed binary and text files to output) ... SUCCESS!
+<- Run of asgn0.test.03 complete ----------
+
+--------> Running asgn0.test.04 (Write multiple files including one using '-' for a name (standard input)) ... SUCCESS!
+<- Run of asgn0.test.04 complete ----------
+
+--------> Running asgn0.test.05 (Run shoulders with no file arguments) ... SUCCESS!
+<- Run of asgn0.test.05 complete ----------
+
+--------> Running asgn0.test.06 (Run shoulders on large text files) ... SUCCESS!
+<- Run of asgn0.test.06 complete ----------
+
+--------> Running asgn0.test.07 (Run shoulders on large mixed binary and text files) ... SUCCESS!
+<- Run of asgn0.test.07 complete ----------
+
+--------> Running asgn0.test.08 (Test if any FILE* functions are NOT used) ... SUCCESS!
+<- Run of asgn0.test.08 complete ----------
+
+--------> Running asgn0.test.09 (Run shoulders on two copies of the same file) ... SUCCESS!
+<- Run of asgn0.test.09 complete ----------
+
+--------> Running asgn0.test.10 (Run shoulders on many small files) ... SUCCESS!
+<- Run of asgn0.test.10 complete ----------
+
+--------> Running asgn0.test.11 (Run shoulders with multiple files including '-' and a directory as arguments) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn0.test.11 complete ----------
+
+--------> Running asgn0.test.12 (Run shoulders on a non-existent file) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn0.test.12 complete ----------
+
+--------> Running asgn0.test.13 (Run shoulders on a file we do not have permission to read) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn0.test.13 complete ----------
+
+--------> Running asgn0.test.14 (Run shoulders with a directory as an argument) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn0.test.14 complete ----------
+
+--------> Running asgn0.test.15 (Run shoulders with an empty file) ... SUCCESS!
+<- Run of asgn0.test.15 complete ----------
+
+--------> Running asgn0.test.16 (Run shoulders with an invalid first parameters) ... SUCCESS!
+<- Run of asgn0.test.16 complete ----------
+
+--------> Running asgn0.test.17 (Run shoulders with a number parameter larger than a small file) ... SUCCESS!
+<- Run of asgn0.test.17 complete ----------
+
+--------> Running asgn0.test.18 (Run shoulders with a number parameter larger than a large file) ... SUCCESS!
+<- Run of asgn0.test.18 complete ----------
+
+-------- SCORES --------
+what,total,asgn0.test.01,asgn0.test.02,asgn0.test.03,asgn0.test.04,asgn0.test.05,asgn0.test.06,asgn0.test.07,asgn0.test.08,asgn0.test.09,asgn0.test.10,asgn0.test.11,asgn0.test.12,asgn0.test.13,asgn0.test.14,asgn0.test.15,asgn0.test.16,asgn0.test.17,asgn0.test.18
+MaxPoints,36,3,2,3,3,3,1,2,3,4,3,0,0,0,0,1,1,1,1
+Score,31,3,2,3,3,3,1,2,3,4,3,0,0,0,0,1,1,1,1
+-------- END_SCORES --------

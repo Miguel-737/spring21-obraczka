@@ -1,0 +1,166 @@
+Name:            'Avalos, Miguel'
+CruzID:          'miaavalo'
+Commit Graded:   '5d0d1ed48faf83874ae9174265859a0af0620af8'
+Late Days Used:  0
+Score:           89.00/100
+
+
+Functional (54/60)
+
+Design Document (15/18)
+    -Project Description    (3/3)
+    -Program Logic          (3/3)
+    -Data Structures        (3/3)
+    -Functions              (3/3)
+    -Questions              (3/3)
+    -Testing                (0/3)
+
+Code Style (5/5)
+
+
+Functional Tests Output:
+
+========> Checking asgn1 now (2021-05-06 23:38:03.150135) ==================================
+------ Checking for files before running commands ------
+Files OK
+----- Running commands:
+cd asgn1; echo '-- Files in asgn1 --' ; ls ; echo '-- Running make --' ; make
+------ Command output ------
+-- Files in asgn1 --
+DESIGN.pdf
+httpserver.c
+Makefile
+README.md
+-- Running make --
+gcc -c -std=c99 -Wall -Wextra -Wpedantic -Wshadow httpserver.c
+gcc -o httpserver httpserver.o
+chmod +x httpserver
+------ End command output ------
+------ Checking for files after running commands ------
+Files OK
+.......................................................
+++++ Your submission has met minimum requirements for assignment asgn1.
+++++ You may submit commit ID 5d0d1ed48faf83874ae9174265859a0af0620af8 for asgn1.
+.......................................................
+<======== Done checking asgn1 (2021-05-06 23:38:03.252135)
+
+
+========> Running test script for asgn1 (2021-05-06 23:38:03.252250) <================
+--> Building ...succeeded!
+--------> Running asgn1.test.01 (GET a zero sized file) ... SUCCESS!
+<- Run of asgn1.test.01 complete ----------
+
+--------> Running asgn1.test.02 (GET a small text file) ... SUCCESS!
+<- Run of asgn1.test.02 complete ----------
+
+--------> Running asgn1.test.03 (GET a small binary file) ... SUCCESS!
+<- Run of asgn1.test.03 complete ----------
+
+--------> Running asgn1.test.04 (GET a large text file) ... SUCCESS!
+<- Run of asgn1.test.04 complete ----------
+
+--------> Running asgn1.test.05 (GET a large binary file) ... SUCCESS!
+<- Run of asgn1.test.05 complete ----------
+
+--------> Running asgn1.test.06 (PUT a small text file) ... SUCCESS!
+<- Run of asgn1.test.06 complete ----------
+
+--------> Running asgn1.test.07 (PUT a small binary file) ... SUCCESS!
+<- Run of asgn1.test.07 complete ----------
+
+--------> Running asgn1.test.08 (PUT a large binary file) ... SUCCESS!
+<- Run of asgn1.test.08 complete ----------
+
+--------> Running asgn1.test.09 (Test HEAD request for a proper response header with 200 (OK)) ... SUCCESS!
+<- Run of asgn1.test.09 complete ----------
+
+--------> Running asgn1.test.10 (Test if PUT requests receive response code 201 (Created) in response header) ... SUCCESS!
+<- Run of asgn1.test.10 complete ----------
+
+--------> Running asgn1.test.11 (Test for 400 error on bad resource (request-target) name) ... SUCCESS!
+<- Run of asgn1.test.11 complete ----------
+
+--------> Running asgn1.test.12 (Test for persistent connections with GET) ... SUCCESS!
+<- Run of asgn1.test.12 complete ----------
+
+--------> Running asgn1.test.13 (Test for 404 error for resource that doesn't exist) ... SUCCESS!
+<- Run of asgn1.test.13 complete ----------
+
+--------> Running asgn1.test.14 (PUT a zero sized file) ... timed out after 10.00 seconds ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+b''
+====
+      !!! standard error is not generated for tests that time out !!!
+<- Run of asgn1.test.14 complete ----------
+
+--------> Running asgn1.test.15 (PUT a file with only null bytes in its contents) ... SUCCESS!
+<- Run of asgn1.test.15 complete ----------
+
+--------> Running asgn1.test.16 (GET a file with only null bytes in its contents) ... SUCCESS!
+<- Run of asgn1.test.16 complete ----------
+
+--------> Running asgn1.test.17 (Test GET request for a proper response header with 200 (OK)) ... SUCCESS!
+<- Run of asgn1.test.17 complete ----------
+
+--------> Running asgn1.test.18 (Test if server can handle an invalid method (POST)) ... SUCCESS!
+<- Run of asgn1.test.18 complete ----------
+
+--------> Running asgn1.test.19 (Test if server can update files) ... SUCCESS!
+<- Run of asgn1.test.19 complete ----------
+
+--------> Running asgn1.test.20 (Test for 400 error on bad resource (URI != 15 char)) ... SUCCESS!
+<- Run of asgn1.test.20 complete ----------
+
+--------> Running asgn1.test.21 (Test for 403 error on resource without permission (PUT)) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn1.test.21 complete ----------
+
+--------> Running asgn1.test.22 (Test for 403 error on resource without permission (GET)) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn1.test.22 complete ----------
+
+--------> Running asgn1.test.23 (Test for 404 error for resource that does not exist) ... SUCCESS!
+<- Run of asgn1.test.23 complete ----------
+
+--------> Running asgn1.test.24 (PUT request with delays throughout the message) ... SUCCESS!
+<- Run of asgn1.test.24 complete ----------
+
+--------> Running asgn1.test.25 (Test for 403 error on HEAD request for resource without permission) ... failure!
+stdout (first 0 characters):
+
+====
+stderr (first 200 characters):
+
+====
+<- Run of asgn1.test.25 complete ----------
+
+--------> Running asgn1.test.26 (Test for persistent connections using PUT) ... SUCCESS!
+<- Run of asgn1.test.26 complete ----------
+
+--------> Running asgn1.test.27 (Test very large request header) ... SUCCESS!
+<- Run of asgn1.test.27 complete ----------
+
+--------> Running asgn1.test.28 (Test for persistent connection using netcat and mixed requests) ... SUCCESS!
+<- Run of asgn1.test.28 complete ----------
+
+--------> Running asgn1.test.29 (Test for correct body on response to PUT request) ... SUCCESS!
+<- Run of asgn1.test.29 complete ----------
+
+-------- SCORES --------
+what,total,asgn1.test.01,asgn1.test.02,asgn1.test.03,asgn1.test.04,asgn1.test.05,asgn1.test.06,asgn1.test.07,asgn1.test.08,asgn1.test.09,asgn1.test.10,asgn1.test.11,asgn1.test.12,asgn1.test.13,asgn1.test.14,asgn1.test.15,asgn1.test.16,asgn1.test.17,asgn1.test.18,asgn1.test.19,asgn1.test.20,asgn1.test.21,asgn1.test.22,asgn1.test.23,asgn1.test.24,asgn1.test.25,asgn1.test.26,asgn1.test.27,asgn1.test.28,asgn1.test.29
+MaxPoints,60,2,4,3,2,2,4,3,2,3,2,1,3,1,0,2,2,3,2,3,1,0,0,1,3,0,2,1,1,1
+Score,54,2,4,3,2,2,4,3,2,3,2,1,3,1,0,2,2,3,2,3,1,0,0,1,3,0,2,1,1,1
+-------- END_SCORES --------
